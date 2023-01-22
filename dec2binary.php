@@ -7,11 +7,11 @@ const ONE = 1;
 function decimal2binary(int $decimalNumber) : string
 {
     // validation invalid number
-    if ($decimalNumber < 0) {
+    if ($decimalNumber < ZERO) {
         throw new Exception(message: "Error. Invalid decimal number");
     }
 
-    if ($decimalNumber == 0) {
+    if ($decimalNumber == ZERO) {
         return ZERO;
     }
 
